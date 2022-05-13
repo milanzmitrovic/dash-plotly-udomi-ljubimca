@@ -1,20 +1,36 @@
 
 from dash import Dash, html, dcc, Input, Output
+import dash_bootstrap_components as dbc
+
+from pages.global_ui_components.footer.footer_file import footer
 from pages.personal_users import create_personal_user
 from pages.personal_users import read_personal_user
 
-app = Dash(__name__, suppress_callback_exceptions=True)
+
+app = Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
 
 
-app.layout = html.Div([
+app.layout = dbc.Container([
     dcc.Location(id='url', refresh=False),
     html.Button(),
     html.Div(id='page-content'),
     dcc.Link('Go to Page 1', href='/personal_user/create'),
     html.Br(),
-    dcc.Link('Go to Page 2', href='/personal_user/read')
-])
+    dcc.Link('Go to Page 2', href='/personal_user/read'),
+
+    # html.Hr(),
+    footer
+
+],
+    #
+    # style={
+    #     'margin-left': 0,
+    #     'margin-right': 0
+    #       },
+    fluid=True,
+    style={'padding': '0px'}
+)
 
 
 @app.callback(
