@@ -20,7 +20,7 @@ footer = dbc.Container([
                         style={'text-align': 'center'}),
                 align="center",
                 lg=3,
-                xl=1,
+                xl=2,
                 sm=3,
                 xs=12
                 ),
@@ -29,7 +29,7 @@ footer = dbc.Container([
                         style={'text-align': 'center'}),
                 align="center",
                 lg=3,
-                xl=1,
+                xl=2,
                 sm=3,
                 xs=12
                 ),
@@ -38,7 +38,7 @@ footer = dbc.Container([
                         style={'text-align': 'center'}),
                 align="center",
                 lg=3,
-                xl=1,
+                xl=2,
                 sm=3,
                 xs=12
                 ),
@@ -47,7 +47,7 @@ footer = dbc.Container([
                         style={'text-align': 'center'}),
                 align="center",
                 lg=3,
-                xl=1,
+                xl=2,
                 sm=3,
                 xs=12
                 )
