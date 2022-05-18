@@ -2,9 +2,14 @@
 from dash import Input, Output, html, callback, dcc
 
 
+from pages.global_ui_components.header.header_file import header
+
+
 def layout():
 
     return html.Div([
+
+                header,
                 html.Br(),
                 html.Br(),
                 html.Br(),
