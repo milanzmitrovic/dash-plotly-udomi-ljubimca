@@ -1,8 +1,11 @@
+
 from dash import dcc, html, Input, Output, callback, State
+from pages.global_ui_components.header.header_file import header
 
 
 layout = html.Div([
 
+    header,
     html.Br(),
     html.Br(),
     html.Br(),

@@ -13,7 +13,6 @@ server = app.server
 
 app.layout = dbc.Container([
     dcc.Location(id='url', refresh=False),
-    html.Button(),
     html.Div(id='page-content'),
     dcc.Link('Go to Page 1', href='/personal_user/create'),
     html.Br(),

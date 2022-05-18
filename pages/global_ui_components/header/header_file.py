@@ -1,18 +1,18 @@
 
+
 from dash import html
 import dash_bootstrap_components as dbc
 
 
-footer = dbc.Container([
+header = dbc.Container([
 
     dbc.Row([
         html.Br(),
-        html.Br(),
-        # html.Br()
 
-    ]),
+    ], style={'height': '10px'}),
 
     dbc.Row([
+
 
         dbc.Col(html.H5("O nama",
                         style={'text-align': 'center'}),
@@ -58,19 +58,15 @@ footer = dbc.Container([
         justify='center'
     ),
 
-    html.Br(),
+    dbc.Row([
+        html.Br(),
 
-    dbc.Row(html.H6("@ 2022 Udomi Ljubimce | All Rights Reserved",
-                    style={'text-align': 'center'}),
-            align='center'
-            ),
-    html.Br()
+    ], style={'height': '5px'}),
+
 
 ],
     style={'backgroundColor': '#D3D3D3'},
     fluid=True,
 )
-
-
 
 
