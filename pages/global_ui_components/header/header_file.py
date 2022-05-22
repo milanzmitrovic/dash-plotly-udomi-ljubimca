@@ -14,7 +14,7 @@ header = dbc.Container([
     dbc.Row([
 
 
-        dbc.Col(html.H5("O nama",
+        dbc.Col(html.H5("Udruženja",
                         style={'text-align': 'center'}),
                 align="center",
                 lg=3,
@@ -23,7 +23,7 @@ header = dbc.Container([
                 xs=12
                 ),
 
-        dbc.Col(html.H5("Prijavi problem",
+        dbc.Col(html.H5("Saveti",
                         style={'text-align': 'center'}),
                 align="center",
                 lg=3,
@@ -32,7 +32,7 @@ header = dbc.Container([
                 xs=12
                 ),
 
-        dbc.Col(html.H5("Uslovi korišćenja",
+        dbc.Col(html.H5("Blog",
                         style={'text-align': 'center'}),
                 align="center",
                 lg=3,
@@ -41,7 +41,16 @@ header = dbc.Container([
                 xs=12
                 ),
 
-        dbc.Col(html.H5("Kontakt",
+        dbc.Col(html.H5("Prijavi se",
+                        style={'text-align': 'center'}),
+                align="center",
+                lg=3,
+                xl=2,
+                sm=3,
+                xs=12
+                ),
+
+        dbc.Col(html.H5("Registruj se",
                         style={'text-align': 'center'}),
                 align="center",
                 lg=3,

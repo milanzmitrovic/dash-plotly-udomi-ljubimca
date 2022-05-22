@@ -3,6 +3,7 @@ from dash import Dash, html, dcc, Input, Output
 import dash_bootstrap_components as dbc
 
 from pages.global_ui_components.footer.footer_file import footer
+from pages.global_ui_components.header.header_file import header
 from pages.personal_users import create_personal_user
 from pages.personal_users import read_personal_user
 
@@ -12,6 +13,7 @@ server = app.server
 
 
 app.layout = dbc.Container([
+    header,
     dcc.Location(id='url', refresh=False),
     html.Div(id='page-content'),
     dcc.Link('Go to Page 1', href='/personal_user/create'),
