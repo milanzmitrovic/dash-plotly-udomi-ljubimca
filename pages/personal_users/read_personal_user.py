@@ -9,7 +9,6 @@ def layout():
 
     return html.Div([
 
-                header,
                 html.Br(),
                 html.Br(),
                 html.Br(),

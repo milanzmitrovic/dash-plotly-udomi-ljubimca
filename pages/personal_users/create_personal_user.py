@@ -5,7 +5,6 @@ from pages.global_ui_components.header.header_file import header
 
 layout = html.Div([
 
-    header,
     html.Br(),
     html.Br(),
     html.Br(),
